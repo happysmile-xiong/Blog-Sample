@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-31T13:50:17.381Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="HyLlspB_5NOFLgTVQued" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-31T14:50:14.918Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="Jxtvdyv6KovaxMNYF5C4" version="23.0.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1180" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
@@ -180,16 +180,19 @@
           <mxGeometry x="311" y="1058" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EsSN8f5Hce0QhLabwmTy-57" value="计算当前客流 =&amp;nbsp;&lt;br&gt;同车次上一条车仿真客流人数 + 当前站上车人数 - 当前站下车人数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="767" y="547.5" width="183" height="60" as="geometry" />
+          <mxGeometry x="736" y="510" width="183" height="60" as="geometry" />
         </mxCell>
         <mxCell id="EsSN8f5Hce0QhLabwmTy-58" value="计算当前站OD进站量 分为上行进站OD和下行进站OD&lt;br&gt;当前站上车人数 = 根据当前时间、起点站、线路方向、查询当前线路方向的OD量" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="770" y="630" width="200" height="80" as="geometry" />
+          <mxGeometry x="775" y="850" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EsSN8f5Hce0QhLabwmTy-59" value="车仿真都是从起点站开始时间开始吗？&lt;br&gt;第一条数据的客流数据是否为0呢？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="730" y="446" width="230" height="40" as="geometry" />
+          <mxGeometry x="760" y="437" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="EsSN8f5Hce0QhLabwmTy-60" value="行车方案图号和车次是一对多关系" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="338" y="48" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EsSN8f5Hce0QhLabwmTy-61" value="获取当前车站作为起点站及当前时间查询 仿真方案客流&lt;br&gt;OD数据&lt;br&gt;循环客流OD数据进行乘客路径规划&lt;br&gt;根据路径规划数据取得线路方向（上行 OR 下行）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="731" y="600" width="189" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
